@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="AntPractice" default="test" basedir=".">
+<project name="AntPractice" default="Test" basedir=".">
 	<target name="Test">
 		<echo>Hello World</echo>
 	</target>
