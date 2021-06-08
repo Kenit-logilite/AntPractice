@@ -3,4 +3,8 @@
 	<target name="Test">
 		<echo>Hello World</echo>
 	</target>
+	
+	<target name="Test1">
+		<echo>Hello World for test 1</echo>
+	</target>
 </project>
