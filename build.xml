@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< Updated upstream
 <project name="AntPractice" default="Test" basedir=".">
 	<target name="Test">
 		<echo>Hello World</echo>
@@ -7,4 +8,29 @@
 	<target name="Test1">
 		<echo>Hello World for test 1</echo>
 	</target>
+=======
+<project name="AntPractice" default="copy" basedir=".">
+		
+		<target name="delete">
+			<delete dir="bin"/>
+			<delete dir="src"/>
+			<delete dir="lib"/>
+			<delete dir="test-output"/>
+			
+		</target>
+		
+		<target name="create" depends="delete">
+			<mkdir dir="bin" />
+			<mkdir dir="src" />
+			<mkdir dir="lib" />
+			<mkdir dir="test-output" />
+		</target>
+		
+		<target name="copy" depends="create">
+			<copy file="C:\Users\Kenit\Desktop\Git Repo\AntPractice\build\src" tofile="C:\Users\Kenit\Desktop\Git Repo\AntPractice\src" />
+			<copy todir="C:\Users\Kenit\Desktop\Git Repo\AntPractice\build\lib" overwrite="true" >
+				<fileset dir="C:\Users\Kenit\Desktop\Git Repo\AntPractice\src\com\practice\ant"></fileset>
+			</copy>
+		</target>
+>>>>>>> Stashed changes
 </project>
