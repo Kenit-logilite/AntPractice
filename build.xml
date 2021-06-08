@@ -14,6 +14,15 @@
 			<mkdir dir="src" />
 			<mkdir dir="lib" />
 			<mkdir dir="test-output" />
+<<<<<<< Updated upstream
+=======
+		</target>
+		
+		<target name="copy" depends="create">
+		<copy todir="C:\Users\Kenit\Desktop\Git Repo\AntPractice\src"><fileset dir="C:\Users\Kenit\Desktop\Git Repo\AntPractice\ant\build\src"/></copy>  
+		
+			
+>>>>>>> Stashed changes
 			
 		</target>
 </project>
