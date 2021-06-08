@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="AntPractice" default="Test" basedir=".">
-	<target name="Test">
-		<echo>Hello World</echo>
-	</target>
-	
-	<target name="Test1">
-		<echo>Hello World for test 1</echo>
-	</target>
+<project name="AntPractice" default="create" basedir=".">
+		
+		<target name="delete">
+			<delete dir="bin"/>
+			<delete dir="src"/>
+			<delete dir="lib"/>
+			<delete dir="test-output"/>
+			
+		</target>
+		
+		<target name="create" depends="delete">
+			<mkdir dir="bin" />
+			<mkdir dir="src" />
+			<mkdir dir="lib" />
+			<mkdir dir="test-output" />
+			
+		</target>
 </project>
