@@ -20,7 +20,7 @@
 		
 		
 		<target name="copy" depends="create">
-		<copy todir="C:\Users\Kenit\Desktop\Git Repo\AntPractice\src"><fileset dir="C:\Users\Kenit\Desktop\Git Repo\AntPractice\ant\build\src"/></copy>  
+		<copy todir="C:\Users\Kenit\Desktop\Git Repo\AntPractice\ant\build\src"><fileset dir="C:\Users\Kenit\Desktop\Git Repo\AntPractice\src"/></copy>  
 	
 			
 		</target>
